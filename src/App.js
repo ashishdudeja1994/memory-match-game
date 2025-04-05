@@ -34,7 +34,23 @@ function App() {
 
   // Save high scores to localStorage
   const saveHighScore = (name, score) => {
-    const newScore = { name, score, date: new Date().toLocaleDateString() };
+    const formatDateTime = (date) => {
+      const options = { 
+        day: 'numeric', 
+        month: 'long', 
+        year: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true
+      };
+      return date.toLocaleDateString('en-US', options);
+    };
+
+    const newScore = { 
+      name, 
+      score, 
+      date: formatDateTime(new Date()) 
+    };
     const updatedScores = [...highScores, newScore].sort((a, b) => a.score - b.score).slice(0, 10);
     setHighScores(updatedScores);
     localStorage.setItem('memoryGameHighScores', JSON.stringify(updatedScores));

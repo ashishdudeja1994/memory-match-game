@@ -160,7 +160,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   padding: 15px;
-  max-width: 500px;
+  max-width: 600px;
   margin: 20px auto;
   color: #333;
 }
@@ -177,6 +177,7 @@ h1 {
 .high-scores table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .high-scores th, 
@@ -184,6 +185,28 @@ h1 {
   padding: 8px;
   text-align: center;
   border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.high-scores th:nth-child(1), 
+.high-scores td:nth-child(1) {
+  width: 10%;
+}
+
+.high-scores th:nth-child(2), 
+.high-scores td:nth-child(2) {
+  width: 30%;
+}
+
+.high-scores th:nth-child(3), 
+.high-scores td:nth-child(3) {
+  width: 15%;
+}
+
+.high-scores th:nth-child(4), 
+.high-scores td:nth-child(4) {
+  width: 45%;
 }
 
 .high-scores th {

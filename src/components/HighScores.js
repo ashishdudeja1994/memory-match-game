@@ -14,7 +14,7 @@ function HighScores({ scores }) {
             <th>Rank</th>
             <th>Name</th>
             <th>Moves</th>
-            <th>Date</th>
+            <th>Date & Time</th>
           </tr>
         </thead>
         <tbody>
