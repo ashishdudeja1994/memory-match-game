@@ -66,7 +66,7 @@ These instructions will help you set up a copy of the project on your local mach
 
 ## Deployment
 
-The game is deployed on Netlify. Visit [https://whimsical-meerkat-eecc60.netlify.app](https://whimsical-meerkat-eecc60.netlify.app) to play!
+The game is deployed on Netlify. Visit [https://memory-flip-card.netlify.app/](https://memory-flip-card.netlify.app/) to play!
 
 ## License
 
